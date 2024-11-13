@@ -6,7 +6,7 @@ function EastAndroid() {
   const appDownloaded = "Maxit Android";
   const createdAt = new Date().toISOString();
 
-  fetch(`https://qrcodes-app-runt.vercel.app/api/maxitapp-for-east/Android`,
+  fetch(`https://maxit-app.vercel.app/api/maxitapp-for-east/Android`,
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
