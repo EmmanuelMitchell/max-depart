@@ -5,7 +5,7 @@ import CountResult from "./routes/CountResult.js"
 import dotenv from 'dotenv'
 
 import East from "./routes/East.js"
-import FreetownWest from "./routes/FreetownEast.js"
+import FreetownWest from "./routes/FreetownWest.js"
 import FreetownEast from "./routes/FreetownEast.js"
 import South from "./routes/South.js"
 import NorhtWest from "./routes/NorthWest.js"
