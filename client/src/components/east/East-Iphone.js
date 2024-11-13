@@ -7,7 +7,7 @@ function EastIphone() {
   const appDownloaded = "Maxit Iphone";
   const createdAt = new Date().toISOString();
 
-  fetch(`https://qrcodes-app-runt.vercel.app/api/maxitapp-for-east/Iphone`,
+  fetch(`https://maxit-app.vercel.app/api/maxitapp-for-east/Iphone`,
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
