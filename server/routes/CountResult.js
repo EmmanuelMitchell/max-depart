@@ -5,9 +5,9 @@ const router = express.Router()
 
 router.get('/', (req, res) => {
     const sql = `
-SELECT 'Maxit Iphone' as total_downloads,  COUNT(downloadLocation) as total FROM maxit WHERE downloadLocation = 'Freetown West Android' AND appDownloaded = 'Maxit Iphone'
+SELECT 'Maxit Iphone' as total_downloads,  COUNT(downloadLocation) as total FROM maxit WHERE downloadLocation = 'Freetown West Iphone' AND appDownloaded = 'Maxit Iphone'
 UNION ALL
-SELECT 'Maxit Android' as total_downloads,  COUNT(downloadLocation) as total FROM maxit WHERE downloadLocation = 'Freetown West Iphone' AND appDownloaded = 'Maxit Android'
+SELECT 'Maxit Android' as total_downloads,  COUNT(downloadLocation) as total FROM maxit WHERE downloadLocation = 'Freetown West Android' AND appDownloaded = 'Maxit Android'
 UNION ALL
 
 SELECT 'Maxit Iphone' as total_downloads,  COUNT(downloadLocation) as total FROM maxit WHERE downloadLocation = 'Freetown East Iphone' AND appDownloaded = 'Maxit Iphone'
