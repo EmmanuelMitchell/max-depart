@@ -7,7 +7,7 @@ function FreetownEastAndroid() {
   const createdAt = new Date().toISOString();
 
   fetch(
-    `https://qrcodes-app-runt.vercel.app/api/maxitapp-for-freetowneast/Android`,
+    `https://maxit-app.vercel.app/api/maxitapp-for-freetowneast/Android`,
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
