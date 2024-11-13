@@ -4,7 +4,7 @@ const router = express.Router()
 
 
 
-router.post("/api/maxitapp-for-freetown/Android", (req, res) => {
+router.post("/api/maxitapp-for-freetownwest/Android", (req, res) => {
     const { downloadLocation, appDownloaded, createdAt } = req.body;
     const sql = "INSERT INTO maxit (downloadlocation, appDownloaded, createdAt) VALUES ($1, $2, $3)";
     const values = [downloadLocation, appDownloaded, createdAt];
@@ -22,7 +22,7 @@ router.post("/api/maxitapp-for-freetown/Android", (req, res) => {
 
 
 
-router.post("/api/maxitapp-for-freetown/Iphone", (req, res) => {
+router.post("/api/maxitapp-for-freetownwest/Iphone", (req, res) => {
     const { downloadLocation, appDownloaded, createdAt } = req.body;
     const sql = "INSERT INTO maxit (downloadlocation, appDownloaded, createdAt) VALUES ($1, $2, $3)"
     const values = [downloadLocation, appDownloaded, createdAt];
