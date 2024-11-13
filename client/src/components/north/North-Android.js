@@ -7,7 +7,7 @@ function NorthAndroid() {
   const createdAt = new Date().toISOString();
 
   fetch(
-    `https://qrcodes-app-runt.vercel.app/api/maxitapp-for-north/Android`,
+    `https://maxit-app.vercel.app/api/maxitapp-for-north/Android`,
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
