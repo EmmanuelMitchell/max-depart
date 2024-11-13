@@ -120,7 +120,7 @@ const MonthlyReport = () => {
 
 
     useEffect(() => {
-        axios.get(`https://qrcodes-app-runt.vercel.app/oneMonth`)
+        axios.get(`https://maxit-app.vercel.app/oneMonth`)
             .then(response => {
 
                 setFreetown_west_iphone_sum(response.data.freetown_west_iphone_sum);
