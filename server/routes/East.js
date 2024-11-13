@@ -18,7 +18,7 @@ router.post("/api/maxitapp-for-east/Android", (req, res) => {
 });
 
 router.post("/api/maxitapp-for-east/Iphone", (req, res) => {
-  const { downloadLocation, appDownloaded, coordinate, createdAt } = req.body;
+  const { downloadLocation, appDownloaded, createdAt } = req.body;
   const sql =
     "INSERT INTO maxit (downloadlocation, appDownloaded, createdAt) VALUES ($1, $2, $3)";
   const values = [downloadLocation, appDownloaded, createdAt];
