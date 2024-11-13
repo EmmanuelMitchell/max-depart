@@ -1,0 +1,38 @@
+  // function saveLocationAndNavigate() {
+  //   navigator.geolocation.getCurrentPosition((position) => {
+  //     const { latitude, longitude } = position.coords;
+  //     const timestamp = new Date().toISOString();
+  //     fetch("http://localhost:7900/api/save-visitor-location", {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/json" },
+  //       body: JSON.stringify({ latitude, longitude, timestamp }),
+  //     })
+  //       .then(() => {
+  //         window.location.href = "https://play.google.com/store/apps/details?id=com.orange.orangemoneyafrique";
+  //       })
+  //       .catch((error) => {
+  //         console.error("Error saving visitor location:", error);
+  //       });
+  //   });
+  // }
+  // saveLocationAndNavigate();
+
+
+
+
+
+  const latitude = 8.4743835;
+  const longitude = -13.261373166666669;
+  const timestamp = new Date().toISOString();
+
+  fetch("http://localhost:7900/api/orangeMoneyAfrica-for-shop-A", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ latitude, longitude, timestamp }),
+  })
+    .then(() => {
+      window.location.href = "https://play.google.com/store/apps/details?id=com.orange.orangemoneyafrique";
+    })
+    .catch((error) => {
+      console.error("Error saving visitor location:", error);
+    });
