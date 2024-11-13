@@ -6,7 +6,7 @@ function FreetownWestAndroid() {
   const appDownloaded = "Maxit Android";
   const createdAt = new Date().toISOString();
 
-  fetch(`https://qrcodes-app-runt.vercel.app/api/maxitapp-for-freetownwest/Android`, {
+  fetch(`https://maxit-app.vercel.app/api/maxitapp-for-freetownwest/Android`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ downloadLocation, appDownloaded, createdAt }),
