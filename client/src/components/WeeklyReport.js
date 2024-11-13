@@ -119,7 +119,7 @@ const WeeklyReport = () => {
 
 
     useEffect(() => {
-        axios.get(`https://qrcodes-app-runt.vercel.app/oneWeek`)
+        axios.get(`https://maxit-app.vercel.app/oneWeek`)
             .then(response => {
 
                 setFreetown_west_iphone_sum(response.data.freetown_west_iphone_sum);
