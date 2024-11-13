@@ -33,7 +33,7 @@ SELECT 'Maxit Android' as total_downloads,  COUNT(downloadLocation) as total FRO
 UNION ALL
 
 
-SELECT 'Maxit Iphone' as total_downloads,  COUNT(downloadLocation) as total FROM maxit WHERE downloadLocation = 'South Android' AND appDownloaded = 'Maxit Iphone'
+SELECT 'Maxit Iphone' as total_downloads,  COUNT(downloadLocation) as total FROM maxit WHERE downloadLocation = 'South Iphone' AND appDownloaded = 'Maxit Iphone'
 UNION ALL
 SELECT 'Maxit Android' as total_downloads,  COUNT(downloadLocation) as total FROM maxit WHERE downloadLocation = 'South Android' AND appDownloaded = 'Maxit Android'
 
@@ -90,9 +90,9 @@ SELECT 'Maxit Android' as total_downloads,  COUNT(downloadLocation) as total FRO
 
 router.get('/oneWeek', (req, res) => {
     const sql = `
-SELECT 'freetown_west_iphone' as total_downloads,  COUNT(downloadLocation) as total FROM maxit WHERE downloadLocation = 'Freetown West Android' AND appDownloaded = 'Maxit Iphone' AND createdAt >= CURRENT_DATE - INTERVAL '1 week'
+SELECT 'freetown_west_iphone' as total_downloads,  COUNT(downloadLocation) as total FROM maxit WHERE downloadLocation = 'Freetown West Iphone' AND appDownloaded = 'Maxit Iphone' AND createdAt >= CURRENT_DATE - INTERVAL '1 week'
 UNION ALL
-SELECT 'freetown_west_android' as total_downloads,  COUNT(downloadLocation) as total FROM maxit WHERE downloadLocation = 'Freetown West Iphone' AND appDownloaded = 'Maxit Android' AND createdAt >= CURRENT_DATE - INTERVAL '1 week'
+SELECT 'freetown_west_android' as total_downloads,  COUNT(downloadLocation) as total FROM maxit WHERE downloadLocation = 'Freetown West Android' AND appDownloaded = 'Maxit Android' AND createdAt >= CURRENT_DATE - INTERVAL '1 week'
 UNION ALL
 
 
@@ -120,7 +120,7 @@ SELECT 'north_west_android' as total_downloads,  COUNT(downloadLocation) as tota
 UNION ALL
 
 
-SELECT 'south_iphone' as total_downloads,  COUNT(downloadLocation) as total FROM maxit WHERE downloadLocation = 'South Android' AND appDownloaded = 'Maxit Iphone' AND createdAt >= CURRENT_DATE - INTERVAL '1 week'
+SELECT 'south_iphone' as total_downloads,  COUNT(downloadLocation) as total FROM maxit WHERE downloadLocation = 'South Iphone' AND appDownloaded = 'Maxit Iphone' AND createdAt >= CURRENT_DATE - INTERVAL '1 week'
 UNION ALL
 SELECT 'south_android' as total_downloads,  COUNT(downloadLocation) as total FROM maxit WHERE downloadLocation = 'South Android' AND appDownloaded = 'Maxit Android' AND createdAt >= CURRENT_DATE - INTERVAL '1 week'
 
@@ -174,9 +174,9 @@ SELECT 'south_android' as total_downloads,  COUNT(downloadLocation) as total FRO
 
 router.get('/oneMonth', (req, res) => {
     const sql = `
-SELECT 'freetown_west_iphone' as total_downloads,  COUNT(downloadLocation) as total FROM maxit WHERE downloadLocation = 'Freetown West Android' AND appDownloaded = 'Maxit Iphone' AND createdAt >= CURRENT_DATE - INTERVAL '1 MONTH'
+SELECT 'freetown_west_iphone' as total_downloads,  COUNT(downloadLocation) as total FROM maxit WHERE downloadLocation = 'Freetown West Iphone' AND appDownloaded = 'Maxit Iphone' AND createdAt >= CURRENT_DATE - INTERVAL '1 MONTH'
 UNION ALL
-SELECT 'freetown_west_android' as total_downloads,  COUNT(downloadLocation) as total FROM maxit WHERE downloadLocation = 'Freetown West Iphone' AND appDownloaded = 'Maxit Android' AND createdAt >= CURRENT_DATE - INTERVAL '1 MONTH'
+SELECT 'freetown_west_android' as total_downloads,  COUNT(downloadLocation) as total FROM maxit WHERE downloadLocation = 'Freetown West Android' AND appDownloaded = 'Maxit Android' AND createdAt >= CURRENT_DATE - INTERVAL '1 MONTH'
 UNION ALL
 
 
@@ -204,7 +204,7 @@ SELECT 'north_west_android' as total_downloads,  COUNT(downloadLocation) as tota
 UNION ALL
 
 
-SELECT 'south_iphone' as total_downloads,  COUNT(downloadLocation) as total FROM maxit WHERE downloadLocation = 'South Android' AND appDownloaded = 'Maxit Iphone' AND createdAt >= CURRENT_DATE - INTERVAL '1 MONTH'
+SELECT 'south_iphone' as total_downloads,  COUNT(downloadLocation) as total FROM maxit WHERE downloadLocation = 'South Iphone' AND appDownloaded = 'Maxit Iphone' AND createdAt >= CURRENT_DATE - INTERVAL '1 MONTH'
 UNION ALL
 SELECT 'south_android' as total_downloads,  COUNT(downloadLocation) as total FROM maxit WHERE downloadLocation = 'South Android' AND appDownloaded = 'Maxit Android' AND createdAt >= CURRENT_DATE - INTERVAL '1 MONTH'
 
