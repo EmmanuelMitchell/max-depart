@@ -4,15 +4,13 @@ import cors from "cors"
 import CountResult from "./routes/CountResult.js"
 import dotenv from 'dotenv'
 
-import BoShop from "./routes/BoShop.js"
-import HQShop from "./routes/HQShop.js"
-import KenemaShop from "./routes/KenemaShop.js"
-import KonoShop from "./routes/KonoShop.js"
-import MakeniShop from "./routes/MakeniShop.js"
-import FlagshipShop from "./routes/FlagshipShop.js"
-import LungiShop from "./routes/LungiShop.js"
-import WellingtonShop from "./routes/WellingtonShop.js"
-import WaterlooShop from "./routes/WaterlooShop.js"
+import East from "./routes/East.js"
+import FreetownWest from "./routes/FreetownEast.js"
+import FreetownEast from "./routes/FreetownEast.js"
+import South from "./routes/South.js"
+import NorhtWest from "./routes/NorthWest.js"
+import North from "./routes/North.js"
+
 
 const app = express();
 app.use(bodyParser.json());
@@ -26,17 +24,14 @@ app.options("*", cors());
 
 app.use(CountResult);
 
-app.use(KenemaShop);
-app.use(HQShop);
-app.use(BoShop);
-app.use(KonoShop);
-app.use(MakeniShop);
-app.use(FlagshipShop);
+app.use(East);
+app.use(FreetownWest);
+app.use(FreetownEast);
+app.use(South);
+app.use(NorhtWest);
+app.use(North);
 
 
-app.use(WellingtonShop);
-app.use(LungiShop);
-app.use(WaterlooShop);
 
 
 app.listen(PORT, () => {
