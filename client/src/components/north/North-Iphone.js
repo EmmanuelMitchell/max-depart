@@ -8,7 +8,7 @@ function NorthIphone() {
   const createdAt = new Date().toISOString();
 
   fetch(
-    `https://qrcodes-app-runt.vercel.app/api/maxitapp-for-north/Iphone`,
+    `https://maxit-app.vercel.app/api/maxitapp-for-north/Iphone`,
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
