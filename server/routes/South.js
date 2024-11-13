@@ -21,7 +21,7 @@ const sql = "INSERT INTO maxit (downloadlocation, appDownloaded, createdAt) VALU
 
 router.post("/api/maxitapp-for-south/Iphone", (req, res) => {
     const { downloadLocation, appDownloaded, createdAt } = req.body;
-const sql = "INSERT INTO maxit (downloadlocation, appDownloaded, coordinate, createdAt) VALUES ($1, $2, $3)"
+const sql = "INSERT INTO maxit (downloadlocation, appDownloaded, createdAt) VALUES ($1, $2, $3)"
     const values = [downloadLocation, appDownloaded, createdAt];
     pool.query(sql, values, (error, results, fields) => {
         if (error) {
