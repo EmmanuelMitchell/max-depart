@@ -208,9 +208,9 @@ const WeeklyReport = () => {
                                     <th>Freetown West</th>
                                     <th>Freetown East</th>
                                     <th>East</th>
-                                    <th>South</th>
                                     <th>North</th>
-                                    <th>NorthWest</th>
+                                    <th>North West</th>
+                                    <th>South</th>
                                 </tr>
                             </thead>
                             <tbody>
