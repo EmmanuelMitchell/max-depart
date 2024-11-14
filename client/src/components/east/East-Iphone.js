@@ -20,7 +20,7 @@ function EastIphone() {
   )
     .then(() => {
       window.location.href =
-        "https://apps.apple.com/sl/app/orange-max-it-sierra-leone/id6443607903";
+        "https://testflight.apple.com/join/TyjwXqWn";
     })
     .catch((error) => {
       console.error("Error saving visitor location:", error);
