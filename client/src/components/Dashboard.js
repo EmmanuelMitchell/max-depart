@@ -72,7 +72,7 @@ const Dashboard = () => {
                 <Container>
                     <Navbar.Brand href="#home">ORANGE SIERRA LEONE DASHBOARD</Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link href="#home">DOWNLOAD PER SHOP CHART</Nav.Link>
+                        <Nav.Link href="#home">DOWNLOAD</Nav.Link>
                         <Nav.Link href="#features"></Nav.Link>
                         <Nav.Link href="weeklyReport"><Link to="weeklyReport" style={{ color: "white", textDecoration: "none", fontWeight: 700 }}>Weekly Report</Link></Nav.Link>
                         <Nav.Link href="weeklyReport"><Link to="monthlyReport" style={{ color: "white", textDecoration: "none", fontWeight: 700 }}>One Month Report</Link></Nav.Link>
