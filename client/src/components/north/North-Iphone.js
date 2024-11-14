@@ -21,7 +21,7 @@ function NorthIphone() {
   )
     .then(() => {
       window.location.href =
-        "https://testflight.apple.com/join/TyjwXqWn";
+        "https://apps.apple.com/sl/app/orange-max-it-sierra-leone/id6443607903";
     })
     .catch((error) => {
       console.error("Error saving visitor location:", error);
