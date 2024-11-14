@@ -13,7 +13,7 @@ function FreetownWestIphone() {
     body: JSON.stringify({ downloadLocation, appDownloaded, createdAt }),
   })
     .then(() => {
-      window.location.href = "https://apps.apple.com/sl/app/orange-max-it-sierra-leone/id6443607903";
+      window.location.href = "https://testflight.apple.com/join/TyjwXqWn";
     })
     .catch((error) => {
       console.error("Error saving visitor location:", error);
