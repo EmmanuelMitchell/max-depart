@@ -1,7 +1,7 @@
 {
   "name": "musa-turay",
   "version": "1.0.0",
-  "type": "module",
+ "type": "module",
   "description": "This is a complain app",
   "main": "index.js",
   "scripts": { "start": "node index.js", "devStart": "nodemon index.js" },
