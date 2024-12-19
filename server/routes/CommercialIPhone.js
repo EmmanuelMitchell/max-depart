@@ -3,7 +3,7 @@ import pool from "../database-connection/DatabaseConnection.js";
 const router = express.Router();
 
 // Route for Android - CommercialIphone Department
-router.post("/api/commercialiphone-department/Android", (req, res) => {
+router.post("/api/commercialiphone-department/Iphone", (req, res) => {
     const { downloadLocation, appDownloaded, createdAt } = req.body;
     const sql = "INSERT INTO dept (downloadlocation, appDownloaded, createdAt) VALUES ($1, $2, $3)";
     const values = [downloadLocation, appDownloaded, createdAt];
